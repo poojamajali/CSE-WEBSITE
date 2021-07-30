@@ -1,0 +1,93 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="screen" href="footer.css">
+    <link rel="stylesheet" media="screen" href="head.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" href="image/logo1.jpg">
+    <title>K.L.E Technological University</title>
+    <style>
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+   
+    margin: 10px 10%;
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+   
+
+        <img src="{% static 'image/clg.jpg' %}" alt="college image" height="450px" width="100%">
+        <!-- Photo Grid -->
+        <h1 style="text-align: center;color: red;"><b>SOCSE GALLERY</b></h1><br><br>
+    <div class="row">
+    <div class="column">
+      <img src="{% static 'image/21.png' %}" style="width:100%">
+      <img src="{% static 'image/convocation.jpg' %}" style="width:100%">
+      <img src="{% static 'image/23.png' %}" style="width:100%">
+      <img src="{% static 'image/1.jpg' %}" style="width:100%">
+      <img src="{% static 'image/campus1.jpg' %}" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="{% static 'image/rangoli.png' %}" style="width:100%">
+      <img src="{% static 'image/festival.png' %}" style="width:100%">
+      <img src="{% static 'image/IMG_20181105_183024.png' %}" style="width:100%">
+      <img src="{% static 'image/4.jpg' %}" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="{% static 'image/YL_1541422906449.png' %}" style="width:100%">
+      <img src="{% static 'image/_DSC2064.png' %}" style="width:100%">
+      <img src="{% static 'image/22.png' %}" style="width:100%">
+      <img src="{% static 'image/1.jpg' %}" style="width:100%">
+      </div>
+      <!--   <div class="column">
+        <img src="image/22.png" style="width:100%">
+        <img src="image/IMG_20181105_183024.JPG" style="width:100%">
+        <img src="image/YL_1541422906449.png" style="width:100%">
+        <img src="image/YL_1541423232499.png" style="width:100%">
+        <img src="image/DPP_0080.jpg" style="width:100%">
+        <img src="image/festival.jpg" style="width:100%">
+      </div> -->
+    </div>
+       
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,46 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/main12.css' %}">
+<div style="margin-left: 20%;margin-right: 20%;margin-bottom: 10%;">
+      <div style="height:50px;"><marquee style="padding:15px; color:rgb(47, 48, 47);">UPCMOING EVENTS OF SOCSE! </marquee></div>
+    {% for post in news %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="{% url 'news-detail' post.id %}">{{ post.title }}</a>
+              <small class="text-muted">{{ post.date }}</small>
+            </div>
+            <p class="article-content">{{ post.content }}</p>
+            <img src="{{post.image.url}}" width="200px" height="150px" >
+          </div>
+        
+
+        </article>
+
+        
+
+    {% endfor %}
+
+    <div style="height:50px;"><marquee style="padding:15px; color:rgb(47, 48, 47);">EVENTS COMPLETED </marquee></div>
+
+    {% for post in news1 %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="{% url 'news-detail' post.id %}">{{ post.title }}</a>
+          <small class="text-muted">{{ post.date }}</small>
+        </div>
+        <p class="article-content">{{ post.content }}</p>
+        <img src="{{post.image.url}}" width="200px" height="150px" >
+      </div>
+    
+
+    </article>
+
+    
+
+{% endfor %}
+
+</div>
+{% endblock content %}

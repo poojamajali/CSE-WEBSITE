@@ -1,0 +1,76 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+    
+       
+       
+    <style>
+        .contact-main{
+            width: 100%;
+            height: 300px;
+            margin-top: 70px;
+        }
+         .contact-call{
+            background: goldenrod;
+            float: left;
+            width: 300px;
+            margin-left: 100px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .contact-call i{
+            font-size: 140px;
+            color:#074972;
+        }
+        .contact-call a{
+            float: right;
+            width: 150px;
+            padding: 10px;
+            margin-top: 50px;
+            text-decoration: none;
+
+        }
+        .contact-address{
+            float: right;
+            width: 600px;
+            margin-right: 100px;
+            height: 200px;
+            padding: 20px;
+            background: goldenrod;
+            border-radius: 5px;
+        }
+        .contact-address i{
+            font-size: 140px;
+            color:#074972;
+        }
+         address{
+            position: relative;
+            top: -100px;
+            left: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contact-main">
+        <div class="contact-call">
+            <i class="fa fa-phone"></i>
+          <b>  0836 2378300 <br> +918362378103 (11.00 am To 5.30 pm)</b>
+
+        </div>
+        <div class="contact-address">
+            <i class="fa fa-map-marker"></i>
+            <p> <address><b>
+                K.L.E Technological University, <br> Vidya Nagar,
+                 Hubli. <br>
+                PIN-580030</b>
+            </address> </p>
+        </div>
+    </div>
+  
+</body>
+</html>
+{%  endblock content %}

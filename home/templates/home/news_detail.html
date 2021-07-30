@@ -1,0 +1,23 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/main12.css' %}">
+<div style="margin-left: 20%;margin-right: 20%;margin-bottom: 10%;">
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <h2>{{ object.title }}</h2>
+              <small class="text-muted">{{ object.date }}</small>
+            </div>
+            <img src="{{object.image.url}}" width="400px" height="250px" ><br><br>
+            <p class="article-content" >{{ object.content }}</p>
+        </div>
+
+        {% if user.is_authenticated %}
+        <a href="{% url 'news-update' object.id %}" style="margin-left: 40%;border-style: dashed;padding: 1%;">UPDATE</a>
+        {% endif %}
+            
+         
+        </article>
+</div>
+{% endblock content %}

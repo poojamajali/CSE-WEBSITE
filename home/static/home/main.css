@@ -1,0 +1,152 @@
+
+#first p{
+    position: absolute;
+    top: 3px;
+    left: 55%;
+    color: tomato;
+    font-size: 12px;
+}
+#first i{
+    font-size: 20px;
+    color: #1c4272;
+    display: inline-block;
+    padding: 4px;
+    border:2px solid #062f4f;
+    border-radius: 5px;
+}
+
+.parallax-img{
+    /* height: 400px; */
+    margin: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.parallax-content{
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    line-height: 2em;
+    text-align: justify;
+    word-spacing: 10px;
+    color: black;
+}
+
+.main-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-25px; 
+}
+
+.main-flex1{
+    color:black;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    border-style: outset;
+    
+  
+    padding: 10px;
+  }
+
+
+.icon{
+    color: goldenrod;
+    position: relative;
+    left: 120px;
+    bottom: 80px;
+    font-size: 38px;
+    display: inline;
+}
+.main-flex h4{
+    color: goldenrod;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width:920px){
+    .hide{
+        display: none;
+    }
+}
+
+.main-news{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-25px; 
+}
+
+.main-news1{
+    background-color:lightgray;
+    color: white;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+  
+}
+
+.main-news h4{
+    color: darkblue;
+    padding-bottom: 8px;
+}
+
+.main-news p{
+    color: black;
+   
+}
+
+.main-news1:hover{
+    background-color:cornflowerblue;
+    transition: ease-in-out;
+    color: cornsilk ;
+}
+  
+.contact-main{
+    width: 100%;
+    height: 300px;
+    margin-top: 70px;
+   
+}
+
+.contact-address{
+    margin-left: 10%;
+
+    width: 80%;
+    height: 300px;
+    padding: 20px;          
+    border-radius: 5px;
+  
+}
+
+ address{
+    position: relative;
+    top: -200px;
+    left: 300px;
+
+}
+div#ach ul{
+list-style-type: none;
+
+}
+
+
+/* add style only to the 'li' elements inside the id="one" div. this means 'li' inside the 'ul' inside the 'div' which its id="one" */
+div#ach li{
+
+float: left;
+
+}

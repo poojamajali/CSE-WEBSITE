@@ -1,0 +1,80 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<html>
+    <head>
+        <style>
+
+.child {
+width: 700px;
+position: absolute;
+top: 20%;
+left: 25%;
+margin-left: auto;
+margin-right: auto;
+
+padding: 5%;
+}
+.child1 {
+width: 700px;
+position: absolute;
+top: 50%;
+left: 25%;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+padding: 5%;
+}
+.li1
+{
+    float: left;
+    text-align: left;
+}
+
+        </style>
+    </head>
+    <body>
+       
+
+            <div class="child ">
+                <h1>VISION</h1><br>
+                <p>KLE Technological University will be a national leader in Higher Education –recognized globally for innovative culture, outstanding student experience, research excellence and social impact.</p>
+            
+            </div>
+
+            <div class="child1 parallax-content" >
+                <h1>MISSION</h1><br>
+                <div>
+                    <ol>
+                        <li class="li1">
+                            TO FOSTER A DYNAMIC ENVIRONMENT WITH CUTTING EDGE CURRICULUM AND INNOVATIVE EDUCATIONAL EXPERIENCE TO PREPARE GRADUATES TO SUCCEED AND 
+                            LEAD IN WIDE RANGE OF COMPUTING AND INFORMATION TECHNOLOGY BUSINESS AND OCCUPATIONS.
+                        </li>  
+                        <li class="li1">
+                            TO BE AT THE FOREFRONT OF RESEARCH THROUGH NEW AND EXCITING INNOVATIONS LEADING TO THE FUTURE COMPUTING TECHNOLOGIES. 
+                        </li>     
+                        
+                        <li class="li1">
+                            TO COLLABORATE WITHTIN AND BEYOND DISCIPLINE TO CREATE SOLUTIONS THAT BENEFIT HUMANITY AND SOCIETY.
+                        </li>
+                            
+                    </ol> 
+                </div>
+            </div>
+                             
+
+
+        
+
+
+    </body>
+</html>
+
+
+{% endblock content %}
+
+
+
+<div>
+    <img src="{% static 'image/sub.png' %}" width="1000px" height="500px" alt="Campus picture123" style="display: block;margin-left: auto;margin-right: auto;">
+</div>

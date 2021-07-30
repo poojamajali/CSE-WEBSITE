@@ -1,0 +1,244 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+    <!-- college picture 
+    <div id="para" class="parallax"><img src="{% static 'image/KLETECH.png' %}" width="1000px" height="500px" alt="Campuss"></div>-->
+    <head>
+      
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides  <img src="static/image/convocation.jpg" width="30%" style="background-position: center;" alt="Chicago"> -->
+        <div class="carousel-inner" style=" width:100%; height: 500px ">
+          <div class="item active">
+            <img src="static/image/KLE.jpg" width="70%" height="400px" style="margin: auto;" alt="class">
+          </div>        
+               
+          <div class="item">
+            <img src="static/image/KLETECH.png" width="70%" height="400px" style="margin: auto;" alt="class">
+          </div>  
+        
+          <div class="item ">
+            <img src="static/image/fest.jpg" width="70%" height="400px" style="margin: auto;" alt="class">
+          </div>  
+          <div class="item ">
+            <img src="static/image/DPP.jpg" width="70%" height="400px" style="margin: auto;" alt="class">
+          </div>  
+
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<br><br>
+
+
+      <!-- VISION AND MISSION-->
+    <div class="navbar">
+        <a href="{%  url 'vision-page' %}"><h3>VISION AND MISSION</h3></a>
+        <a href="{%  url 'achieve' %}"><h3>ACHIEVEMENTS</h3></a>
+      </div>
+
+
+      <br><br><br>
+      <!-- clickable flex boxes -->
+      <h1 style="text-align: center;">About School Of Computer Science and Engineering!</h1><br><br>
+    <div class="main-flex">
+
+      <div class="main-flex1">
+          <h4><b>STUDENT CENTRIC ENVIRONMENT</b></h4>
+          <p>SoCSE provides an environment and space for overall development in spears of academics, co-curricular & extra-curricular activities.</p>         
+      </div>
+
+      <div class="main-flex1">
+        <h4><b>EXPERIENTIAL LEANING</b></h4>
+        <p >SoCSE believes in educating students through learning by doing. </p>         
+    </div>
+
+    <div class="main-flex1">
+      <h4><b>CURRICULUM FOCUSED ON RECENT TRENDS</b></h4>
+      <p>Students at SoCSE explore innovative problems in a variety of areas including the development of software to improve education</p>         
+  </div>
+
+  <div class="main-flex1">
+    <h4><b>FACULTY INNOVATIONS IN TEACHING LEARNING</b></h4>
+    <p>Faculty at SoCSE use various teaching-learning methodologies for course development and delivery</p>         
+</div>
+
+      
+
+      
+     
+  </div>
+
+
+   
+
+    <!-- about courses -->
+
+
+        <div class="contact-main">
+          <div class="contact-address">
+              <img src="static/image/YL_1541423232499.png" width="280px" height="250px" >
+              <p><address>
+                  <h3 style="margin-left: 20%;margin-top: -60px;">STUDENT LIFE</h3><br>
+                 <p style="width: 60%;text-align: justify;font-size: 120%;">Students Life in KLE Tech University
+                  During their stay in SoCSE students are provided a vibrant atmosphere and opportunities for overall development.
+                  
+                  SoCSE which provides vibrant and collaborative environment for student interaction share ideas, experiences and knowledge. Its provides impetus to enrich students with leadership qualities, team spirit. Adding dimensions to their personality to emerges as multi-functional engineer who is globally recognized.
+                  </p> 
+              </address> </p>
+          </div>
+          <br>
+
+
+          <div class="contact-main">
+            <div class="contact-address">
+                <img src="static/image/brown-book-page.jpg" width="280px" height="250px" >
+                <p><address>
+                    <h3 style="margin-left: 20%;margin-top: -60px;">CURRICULUM</h3><br>
+                   <p style="width: 60%;text-align: justify;font-size: 120%;">SoCSE believes in educating students through learning by doing. The curriculum involves well designed laboratory courses involving structured and open ended experiments. Theoretical learning in the courses is enhanced by course project and integrated projects.
+        
+                    </p> 
+                </address> </p>
+            </div>
+            <br>
+
+
+            <div class="contact-main">
+              <div class="contact-address">
+                  <img src="static/image/622.png" width="280px" height="250px"  >
+                  <p><address>
+                      <h3 style="margin-left: 20%;margin-top: -60px;">INFRASTRUCTURE</h3><br>
+                     <p style="width: 60%;text-align: justify;font-size: 120%;margin-left: 1%;">
+                      The Department of Computer Science and Engineering (CSE) was set up in 1983 with B.E. programme. 
+                      Since then, the department has grown exponentially over the years on all fronts.
+                     The department has seven computer centres with around 300 computers equipped with the latest hardware, software and peripherals. 
+                     A new feather in the cap is the recently established state-of-the-art AI & ML lab and High performance computing lab
+                      which delivers unparalleled performance for analytics, Artificial Intelligence (AI), and modern High-Performance Computer (HiPC). 
+                       The department hosts a national level conference in 2019 with top companies. 
+
+          
+                      </p> 
+                  </address> </p>
+              </div>
+              <br>
+
+
+              <div class="contact-main">
+                <div class="contact-address">
+                    <img src="static/image/placement.jpg" width="280px" height="250px"  >
+                    <p><address>
+                        <h3 style="margin-left: 20%;margin-top: -60px;">PLACEMENTS</h3><br>
+                       <p style="width: 60%;text-align: justify;font-size: 120%;margin-left: 1%;">
+                        Students receive offers through placements/internships from reputed companies such as Samsung R&D, 
+                        Infosys, Mercedes Benz R&D India, Microsoft R&D, , Deloitte and several others.       
+                         Almost 90% of the students got placed. 
+                         The highest salary package offered in our course was 30 LPA in Amazon for the role of software development. 
+                         The average salary package offered was around 4 LPA-5 LPA.
+                        
+            
+                        </p> 
+                    </address> </p>
+                </div>
+                <br>
+      
+      
+          
+      
+      
+      
+      
+      
+      </div>
+
+
+
+    <br><br><br>
+    <!-- NEWS ABOUT COLLEGE -->
+    <h1 style="text-align: center;">NEWS</h1><br><br>
+  <div class="main-news">
+
+    <div class="main-news1">
+        <h4><b>ONLINE CLASSES</b></h4>
+        <p>Due to pandemic all the classes will be held online until further notice!<br>
+          <br>Please conatct your respective faculties for the course plan! 
+        </p>         
+    </div>
+
+    <div class="main-news1">
+      <h4><b>MINOR EXAMS 2</b></h4>
+      <p >MINOR EXAM 2 WILL BE CONDUCTED FROM 17 JUNE TO 19 JUNE. </p>         
+  </div>
+
+  <div class="main-news1">
+    <h4><b>VIKAS CLASS</b></h4>
+    <p>VIKAS CLASS TIME TABLE HAS BEEN CIRCULATED TO ALL DIVISION! <br>
+    PLEASE ATTEND AS PER YOUR TIME TABLE!</p>         
+</div>
+
+<div class="main-news1">
+  <h4><b>DANCE AUDITIONS</b></h4>
+  <p>DANCE AUDITIONS WILL BE HELD ONLINE FOR DANCE CLUB OF CS DEPARTMENT.
+    BE PREPARED SO THAT YOU CAN ROCK IT!
+  </p>         
+</div>
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <!-- college pic collage -->
+            <div class="footerimg">
+                <h2>Gallery</h2>
+                <a style="text-decoration:none;" href="{% url 'gallery-page' %}">
+                  <img src="{% static 'image/1.jpg' %}" width="100px" height="100px" alt="Campus picture">
+                  <img src="{% static 'image/2.png' %}" width="100px" height="100px" alt="Badminton court">
+                  <img src="{% static 'image/4.jpg' %}" width="100px" height="100px" alt="Library">
+                  <img src="{% static 'image/fest.jpg' %}" width="100px" height="100px" alt="college fest">
+                  <img src="{% static 'image/festival.png' %}" width="100px" height="100px" alt="festival picture">
+                  <img src="{% static 'image/event.jpg' %}" width="100px" height="100px" alt="college event">
+                </a>
+            </div>
+            <div class="foot_second">
+                <!-- college info -->
+                    <h2>About Us</h2>
+                    <p>
+                      KLE Tech Computer Science & Engineering program provides a unique environment for learning through
+                      a curriculum designed for experiential learning. This experience is ensured by creating a curriculum
+                      designed by inputs from industry, academia and recent technological advancements.
+                    </p>
+                    <!-- footer links -->
+                    <a href="{% url 'home-page' %}">HOME</a>
+                    <a href="{% url 'course-page' %}">COURSE</a>
+                    <a href="{% url 'news-show' %}">EVENTS</a>
+                  
+                </div>
+
+        </footer>
+        <!-- javascript link -->
+        <script src="app.js"></script>
+
+
+{% endblock content %}
